@@ -1,5 +1,5 @@
 # Quantum-Annealing-SAT-Solver
-Quantum Annealing SAT Solver using D-Wave Ocean SDK
+Quantum Annealing SAT Solver using D-Wave Ocean SDK 
 
 ## Install:
 ```bash
