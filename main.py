@@ -5,8 +5,10 @@ from dwave.system.composites import EmbeddingComposite
 from dwave.system import LeapHybridSampler
 
 
-# res = next(resp.data(['sample', 'energy'])).sample
 def print_samples(sample, energy, is_satisfiable):
+  """
+  Print dwave samples in a readable format
+  """
   res = sample
   res = {k:v for k,v in res.items() if str(k).isdigit()}
   import collections
@@ -16,7 +18,7 @@ def print_samples(sample, energy, is_satisfiable):
 
 def strip_file_spaces(file_path):
   """
-  This function removes spaces from the beginning of the each line of the input
+  Remove spaces from the beginning of the each line of the input
   """
   with open(file_path, 'r') as file_: 
     lines = file_.readlines()
